@@ -8,13 +8,16 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
+import lombok.Getter;
+
 /**
  * Created by Johan Swanberg on 2016-08-18.
  * A class which interprets pokemon information
  */
 public class PokeInfoCalculator {
 
-    public ArrayList<Pokemon> pokedex = null;
+    @Getter
+    private ArrayList<Pokemon> pokedex = null;
     private HashMap<String, Pokemon> pokemap = null;
 
     /**
